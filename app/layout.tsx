@@ -12,6 +12,21 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const theme = localStorage.getItem('theme');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (theme === 'light' || (!theme && !prefersDark)) {
+                  document.body.classList.add('light-mode');
+                }
+              })();
+            `,
+          }}
+        />
+      </head>
       <body>
         <div className="site">
           <Nav />
@@ -22,4 +37,4 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     </html>
   )
 }
- 
+

@@ -1,10 +1,17 @@
 // /components/Footer.tsx
 export default function Footer() {
-    return (
-      <footer className="site-footer">
-        <div className="footer-inner">
-          <p>© {new Date().getFullYear()} John Bryx Jovellanos — All rights reserved.</p>
+  const currentYear = new Date().getFullYear()
+
+  return (
+    <footer className="site-footer">
+      <div className="footer-inner">
+        <div className="footer-bottom">
+          <p className="footer-copyright">
+            © {currentYear} John Bryx Jovellanos • Made with <span className="footer-heart">♥</span> using Next.js
+          </p>
+          <p className="footer-tagline">Crafting digital experiences, one line of code at a time.</p>
         </div>
-      </footer>
-    )
-  }
+      </div>
+    </footer>
+  )
+}

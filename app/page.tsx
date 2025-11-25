@@ -9,138 +9,135 @@ export default function HomePage() {
       <RevealSection id="home" className="hero">
         <div className="hero-inner">
           <div className="hero-left">
-          <h1 className="hero-title">
-            Hello — I'm<br />
-          <span className="name">John Bryx Jovellanos</span>
-        </h1>
+            <h1 className="hero-title">
+              Hello, I'm
+              <span className="name">John Bryx Jovellanos</span>
+            </h1>
             
             <p className="hero-sub">
-              Aspiring Website Developer and Full Stack Developer from St. Paul University Philippines
+              Crafting elegant digital experiences through innovative web development. 
+              Specializing in full-stack solutions that blend aesthetics with functionality.
             </p>
 
             <div className="hero-ctas">
-              <a href="#projects" className="btn btn-primary">View Projects</a>
-              <a href="#contact" className="btn btn-outline">Contact</a>
+              <a href="#projects" className="btn btn-primary">
+                View Projects <span>→</span>
+              </a>
+              <a href="#contact" className="btn btn-outline">
+                Get in Touch
+              </a>
             </div>
           </div>
 
-          <div className="hero-inner">
-  <div className="hero-left">
-    {/* ...your text content... */}
-  </div>
-  <div className="profile-container">
-  <div className="photo-placeholder">
-    <Image
-      src="/bryxxx.jpg"
-      alt="Profile"
-      fill
-      sizes="(max-width: 600px) 80vw, 280px"
-      style={{ objectFit: "cover", borderRadius: "15px" }}
-    />
-  </div>
-</div>
-</div>
+          <div className="photo-placeholder">
+            <Image
+              src="/bryxxx.jpg"
+              alt="John Bryx Jovellanos"
+              width={420}
+              height={420}
+              priority
+            />
+          </div>
         </div>
       </RevealSection>
 
-     {/* <!-- START ABOUT ME --> */}
-     <RevealSection id="aboutme" className="container">
-  <h2 className="section-title">About Me</h2>
-  <div className="about-columns">
-    <div className="about-main-box">
-      <p>
-        Graduating IT student majoring in Website Development and Full-Stack Development. Passionate about technology and creating meaningful digital solutions. Skilled in building responsive websites, developing both front-end and back-end features, managing databases, and delivering user-focused web applications. Driven by continuous learning and dedicated to using technology to build smarter, more efficient systems that contribute to a better tomorrow.
-      </p>
-    </div>
-    <div className="about-side">
-      <div className="about-side-box">
-        <h3>Education</h3>
-        <p>Bachelor of Science in Information Technology</p>
-      </div>
-      <div className="about-side-box">
-        <h3>Specialization</h3>
-        <p>Website Development & Full Stack Development</p>
-      </div>
-      <div className="about-side-box">
-        <h3>Passion</h3>
-        <p>Building accessible, user-friendly interfaces and learning new technologies.</p>
-      </div>
-    </div>
-  </div>
-  </RevealSection>
-{/* <!-- END ABOUT ME --> */}
+      <RevealSection id="aboutme" className="container">
+        <h2 className="section-title">About Me</h2>
+        <div className="about-main-box">
+          <p>
+            I'm a passionate IT student specializing in Website and Full-Stack Development at St. Paul University Philippines. 
+            My journey in technology is driven by a commitment to creating meaningful digital solutions that make a difference. 
+            I thrive on transforming complex challenges into elegant, user-centric applications that deliver real value.
+          </p>
+        </div>
+        <div className="about-side">
+          <div className="about-side-box">
+            <h3>Education</h3>
+            <p>Bachelor of Science in Information Technology<br/>St. Paul University Philippines</p>
+          </div>
+          <div className="about-side-box">
+            <h3>Expertise</h3>
+            <p>Website Development<br/>Full Stack Development<br/>UI/UX Design</p>
+          </div>
+          <div className="about-side-box">
+            <h3>Philosophy</h3>
+            <p>Building accessible, intuitive interfaces while continuously evolving through emerging technologies.</p>
+          </div>
+        </div>
+      </RevealSection>
 
-      {/* <!-- START SKILLS --> */}
       <RevealSection id="skills" className="container">
-  <h2 className="section-title">Skills</h2>
-  <div className="skills-grid">
-    <div className="skill-box">
-      <h3>Website Development</h3>
-      <p>Experienced in building modern, responsive, and accessible websites from scratch.</p>
-    </div>
-    <div className="skill-box">
-      <h3>Frontend Development</h3>
-      <p>Proficient in React, HTML, CSS, and JavaScript to create engaging user interfaces.</p>
-    </div>
-    <div className="skill-box">
-      <h3>Backend Development</h3>
-      <p>Skilled in Node.js and Express for building robust server-side applications and APIs.</p>
-    </div>
-    <div className="skill-box">
-      <h3>Database Development</h3>
-      <p>Experienced with SQL and NoSQL databases for efficient data storage and retrieval.</p>
-    </div>
-    <div className="skill-box">
-      <h3>Tools & Technologies</h3>
-      <p>Familiar with Git, VS Code, REST APIs, and deployment tools for streamlined workflows.</p>
-    </div>
-    <div className="skill-box">
-      <h3>Soft Skills</h3>
-      <p>Strong communicator, team player, and quick learner dedicated to continuous improvement.</p>
-    </div>
-  </div>
-  </RevealSection>
-{/* <!-- END SKILLS --> */}
+        <h2 className="section-title">Skills & Expertise</h2>
+        <div className="skills-grid">
+          <div className="skill-box">
+            <h3>Frontend Development</h3>
+            <p>Creating responsive, accessible interfaces with React, Next.js, HTML5, CSS3, and modern JavaScript frameworks.</p>
+          </div>
+          <div className="skill-box">
+            <h3>Backend Development</h3>
+            <p>Building scalable server architectures using Node.js, Express, and RESTful API design principles.</p>
+          </div>
+          <div className="skill-box">
+            <h3>Database Management</h3>
+            <p>Designing efficient data structures with MySQL, PostgreSQL, and MongoDB for optimal performance.</p>
+          </div>
+          <div className="skill-box">
+            <h3>Development Tools</h3>
+            <p>Version control with Git, modern IDEs, CI/CD pipelines, and cloud deployment platforms.</p>
+          </div>
+          <div className="skill-box">
+            <h3>UI/UX Design</h3>
+            <p>Crafting intuitive user experiences with attention to detail, accessibility, and visual hierarchy.</p>
+          </div>
+          <div className="skill-box">
+            <h3>Collaboration</h3>
+            <p>Effective communication, agile methodologies, and continuous learning mindset for team success.</p>
+          </div>
+        </div>
+      </RevealSection>
 
-{/* <!-- START PROJECTS --> */}
-<RevealSection id="projects" className="container">
-  <h2 className="section-title">Projects</h2>
-  <div className="project-box">
-    <h3>University Clearance Management System With Decision Support</h3>
-    <p>Streamline the clearance process at St. Paul University Philippines.</p>
-    <div className="tech-badges">
-      <span className="tech-badge">PHP</span>
-      <span className="tech-badge">Laravel</span>
-      <span className="tech-badge">Python</span>
-      <span className="tech-badge">MySQL</span>
-    </div>
-  </div>
-</RevealSection>
-{/* <!-- END PROJECTS --> */}
+      <RevealSection id="projects" className="container">
+        <h2 className="section-title">Featured Projects</h2>
+        <div className="project-box">
+          <h3>University Clearance Management System</h3>
+          <p>
+            A comprehensive decision support system designed to streamline the clearance process at St. Paul University Philippines. 
+            Features automated workflows, real-time tracking, and intelligent analytics for enhanced administrative efficiency.
+          </p>
+          <div className="tech-badges">
+            <span className="tech-badge">PHP</span>
+            <span className="tech-badge">Laravel</span>
+            <span className="tech-badge">Python</span>
+            <span className="tech-badge">MySQL</span>
+            <span className="tech-badge">REST API</span>
+          </div>
+        </div>
+      </RevealSection>
 
-<RevealSection id="contact" className="container">
-  <h2 className="section-title">Contact</h2>
-  <div className="contact-box">
-    <h3>Feel free to reach out via any of the platforms below:</h3>
-    <div className="contact-socials">
-      <span>
-        📧 Email: 
-      </span>
-      <span> 
-        johnbryxjovellanos@gmail.com
-        </span>
-      <a href="https://www.linkedin.com/in/john-bryx-jovellanos-731872397/" className="contact-social" target="_blank" rel="noopener noreferrer">
-        🔗 LinkedIn
-      </a>
-      <a href="https://github.com/Bryxxx88" className="contact-social" target="_blank" rel="noopener noreferrer">
-        💻 GitHub
-      </a>
-      <a href="https://www.facebook.com/johnbryx.jovellanos88" className="contact-social" target="_blank" rel="noopener noreferrer">
-        📘 Facebook
-      </a>
-    </div>
-  </div>
-</RevealSection>
+      <RevealSection id="contact" className="container">
+        <h2 className="section-title">Let's Connect</h2>
+        <div className="contact-box">
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+          <div className="contact-socials">
+            <div className="contact-email">
+              <span className="contact-email-icon">@</span>
+              johnbryxjovellanos@gmail.com
+            </div>
+            <a href="https://www.linkedin.com/in/john-bryx-jovellanos-731872397/" className="contact-social" target="_blank" rel="noopener noreferrer">
+              <span className="contact-social-icon">in</span>
+              LinkedIn
+            </a>
+            <a href="https://github.com/Bryxxx88" className="contact-social" target="_blank" rel="noopener noreferrer">
+              <span className="contact-social-icon">gh</span>
+              GitHub
+            </a>
+            <a href="https://www.facebook.com/johnbryx.jovellanos88" className="contact-social" target="_blank" rel="noopener noreferrer">
+              <span className="contact-social-icon">fb</span>
+              Facebook
+            </a>
+          </div>
+        </div>
+      </RevealSection>
 
     </>
   )

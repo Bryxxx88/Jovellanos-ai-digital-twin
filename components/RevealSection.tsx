@@ -1,12 +1,6 @@
 // /components/RevealSection.tsx
 'use client'
-import { motion } from 'framer-motion'
-import type { ReactNode } from 'react'
-
-const variants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0 },
-}
+import { useEffect, useRef, type ReactNode } from 'react'
 
 export default function RevealSection({
   children,
@@ -17,17 +11,41 @@ export default function RevealSection({
   id?: string
   className?: string
 }) {
+  const sectionRef = useRef<HTMLElement>(null)
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed')
+          }
+        })
+      },
+      {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px',
+      }
+    )
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current)
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current)
+      }
+    }
+  }, [])
+
   return (
-    <motion.section
+    <section
+      ref={sectionRef}
       id={id}
       className={`reveal-section ${className}`}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.18 }}
-      transition={{ duration: 0.7, ease: 'easeOut' }}
-      variants={variants}
     >
       {children}
-    </motion.section>
+    </section>
   )
 }
